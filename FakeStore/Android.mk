@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := com.android.vending-16-nanodroid.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_CERTIFICATE := keys/fanos/testkey
 LOCAL_REQUIRED_MODULES := \
 	privapp-permissions-com.android.vending.xml
 	#fakestore-permissions.xml
