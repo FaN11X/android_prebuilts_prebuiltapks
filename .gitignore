@@ -1,1 +1,14 @@
-*.apk
+/Bromite/arm64_ChromeModernPublic.apk
+/AuroraStore/AuroraStore.apk
+/BromiteWebView/BromiteWebView_arm64.apk
+/DroidGuard/DroidGuard.apk
+/FDroid/FDroid.apk
+/FDroidPrivilegedExtension/FDroidPrivileged.apk
+/FakeStore/FakeStore.apk
+/GmsCore/GmsCore_NanoDroid.apk
+/GsfProxy/GsfProxy.apk
+/OpenWeatherMapWeatherProvider/OpenWeatherMapProvider.apk
+/nlpBackendDejavu/nlpBackendDejavu.apk
+/nlpBackendIchnaea/nlpBackendIchnaea.apk
+/nlpBackendNominatim/nlpBackendNominatim.apk
+/nlpBackendRadiocell/nlpBackendRadiocell.apk
