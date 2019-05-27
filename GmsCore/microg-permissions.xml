@@ -14,7 +14,7 @@
 
      You should have received a copy of the GNU General Public License
      along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
+ -->
 
 <!-- This file contains permissions to be granted by default.
      Default permissions are granted to special platform components and to apps
@@ -27,41 +27,57 @@
 
      Granting these permissions could prevent issues on some ROMs or
      on non-clean installations.
--->
-<exceptions>
-    <exception package="com.google.android.gms">
-        <!-- Phone -->
-        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
-        <!-- Account -->
-        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
-        <permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
-        <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
-        <!-- Location -->
-        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
-        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
-        <permission name="org.microg.permission.FORCE_COARSE_LOCATION" fixed="false"/>
-        <!-- Storage -->
-        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
-        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
-        <!-- Signature Spoofing -->
-        <permission name="android.permission.FAKE_PACKAGE_SIGNATURE" fixed="false"/>
-    </exception>
+ -->
+ <exceptions>
+ 	<exception package="com.google.android.gms">
+ 		<!-- Phone -->
+ 		<permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+ 		<!-- Account -->
+ 		<permission name="android.permission.READ_CONTACTS" fixed="false"/>
+ 		<permission name="android.permission.WRITE_CONTACTS" fixed="false"/>
+ 		<permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+ 		<!-- Location -->
+ 		<permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+ 		<permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+ 		<permission name="org.microg.permission.FORCE_COARSE_LOCATION" fixed="false"/>
+ 		<!-- Storage -->
+ 		<permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+ 		<permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+ 		<!-- Signature Spoofing -->
+ 		<permission name="android.permission.FAKE_PACKAGE_SIGNATURE" fixed="false"/>
+ 	</exception>
 
-    <exception package="org.microg.nlp.backend.ichnaea">
-        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
-        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
-        <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
-    </exception>
+ 					<!-- GEOLOCATION BACKENDS -->
 
-    <exception package="org.fitchfamily.android.dejavu">
-        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
-        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
-    </exception>
+ 	<!-- nlpBackendDejavu.apk - Dejavu-->
+ 	<exception package="org.fitchfamily.android.dejavu">
+ 		<permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+ 		<permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+ 	</exception>
 
-    <exception package="org.openbmap.unifiedNlp">
-        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
-        <!-- Storage -->
-        <permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
-        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
-    </exception>
-</exceptions>
+	<!-- nlpBackendIchnaea.apk - Mozilla -->
+ 	<exception package="org.microg.nlp.backend.ichnaea">
+ 		<permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+ 		<permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+ 		<permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+ 	</exception>
+
+ 	<!-- nlpBackendRadiocell.apk - Radiocells.org -->
+ 	<exception package="org.openbmap.unifiedNlp">
+ 		<permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+ 		<permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false"/>
+ 		<permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false"/>
+ 	</exception>
+
+ 					<!-- GEOCODING (reverse) BACKENDS -->
+
+ 	<!-- nlpBackendNominatim.apk -->
+ 	<exception package="org.microg.nlp.backend.nominatim"> 		
+ 		<permission name="android.permission.INTERNET" fixed="false"/>
+ 		<!-- <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/> -->
+ 		<!-- <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/> -->
+ 		<!-- <permission name="android.permission.READ_PHONE_STATE" fixed="false"/> -->
+ 	</exception>
+
+
+ </exceptions>
