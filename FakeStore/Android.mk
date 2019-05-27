@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := FakeStore.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := keys/fanos/testkey
+LOCAL_CERTIFICATE := platform
 LOCAL_REQUIRED_MODULES := \
 	privapp-permissions-com.android.vending.xml
 	#fakestore-permissions.xml

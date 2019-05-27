@@ -31,7 +31,7 @@ LOCAL_SRC_FILES := GmsCore_NanoDroid.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := keys/fanos/testkey
+LOCAL_CERTIFICATE := platform
 LOCAL_OVERRIDES_PACKAGES := com.qualcomm.location
 LOCAL_REQUIRED_MODULES := \
 	privapp-permissions-com.google.android.gms.xml \
