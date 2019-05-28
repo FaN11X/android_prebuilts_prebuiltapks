@@ -72,12 +72,12 @@
  					<!-- GEOCODING (reverse) BACKENDS -->
 
  	<!-- nlpBackendNominatim.apk -->
- 	<exception package="org.microg.nlp.backend.nominatim"> 		
- 		<permission name="android.permission.INTERNET" fixed="false"/>
+ 	<!-- <exception package="org.microg.nlp.backend.nominatim"> 		 -->
+ 		<!-- <permission name="android.permission.INTERNET" fixed="false"/> -->
  		<!-- <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/> -->
  		<!-- <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/> -->
  		<!-- <permission name="android.permission.READ_PHONE_STATE" fixed="false"/> -->
- 	</exception>
+ 	<!-- </exception> -->
 
 
  </exceptions>
