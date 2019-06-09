@@ -1,9 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := nlpBackendRadiocell
-LOCAL_SRC_FILES := nlpBackendRadiocell.apk
+LOCAL_MODULE := OsmAnd_ContourLines
+LOCAL_SRC_FILES := OsmAnd_ContourLines.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
