@@ -9,12 +9,12 @@ LOCAL_SRC_FILES := com.google.android.maps.xml
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.google.android.maps
+LOCAL_MODULE := com.google.android.maps.jar
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_SRC_FILES := com.google.android.maps.jar
-LOCAL_PACKAGE_NAME := com.google.android.maps
-LOCAL_CERTIFICATE := platform
+LOCAL_PACKAGE_NAME := com.google.android.maps.jar
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := com.google.android.maps.xml
 include $(BUILD_PREBUILT)
 
